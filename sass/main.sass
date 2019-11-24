@@ -1,6 +1,12 @@
 $color-brand: #0382C3
 $color-header: #0161A3
 $color-brand-hover: #E4F6FE
+$border: 1px solid #eee
+
+%border-shadow
+	border: 1px solid #ccc
+	box-shadow: 0 0 5px 3px #bbb 
+	border-radius: 5px
 
 *
 	margin: 
@@ -30,11 +36,12 @@ header
 	////////////NAV///////////////
 
 main
-	.row .col
+	.row .col 
 		padding: 0
+		// padding-left: 25px
+	.row .col.s2
 		padding-left: 25px
 	menu
-		
 		li
 			a
 				padding: 0px 10px
@@ -56,6 +63,26 @@ main
 					float: none
 		li:hover, li.active
 			background-color: $color-brand-hover
+	
+	.row .col.s3
+		margin: 0 25px
+	aside
+		width: 100%
+		padding: 0
+		@extend %border-shadow
+		img
+			width: 80%
+			margin: 30px auto
+			display: block
+		hr
+			border: none
+			border-bottom: $border
+			margin: 0
+		button
+			margin: 20px
+			width: calc(100% - 40px)
+
+
 		
 
 

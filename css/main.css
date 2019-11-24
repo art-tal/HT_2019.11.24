@@ -1,3 +1,9 @@
+main aside {
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 0 5px 3px #bbb;
+  box-shadow: 0 0 5px 3px #bbb;
+  border-radius: 5px; }
+
 * {
   padding: 0;
   font-family: "RobotoRegular", sans-serif; }
@@ -18,7 +24,9 @@ header {
       vertical-align: middle; }
 
 main .row .col {
-  padding: 0;
+  padding: 0; }
+
+main .row .col.s2 {
   padding-left: 25px; }
 
 main menu li a {
@@ -41,3 +49,21 @@ main menu li a {
 
 main menu li:hover, main menu li.active {
   background-color: #E4F6FE; }
+
+main .row .col.s3 {
+  margin: 0 25px; }
+
+main aside {
+  width: 100%;
+  padding: 0; }
+  main aside img {
+    width: 80%;
+    margin: 30px auto;
+    display: block; }
+  main aside hr {
+    border: none;
+    border-bottom: 1px solid #eee;
+    margin: 0; }
+  main aside button {
+    margin: 20px;
+    width: calc(100% - 40px); }
