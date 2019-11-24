@@ -16,3 +16,28 @@ header {
     header .row .user img {
       width: 48px;
       vertical-align: middle; }
+
+main .row .col {
+  padding: 0;
+  padding-left: 25px; }
+
+main menu li a {
+  padding: 0px 10px; }
+  main menu li a i.small {
+    font-size: 30px;
+    padding-right: 10px; }
+  main menu li a p {
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 4px; }
+  main menu li a span.badge {
+    background-color: #0382C3;
+    color: #fff;
+    border-radius: 4px;
+    margin: 0;
+    min-width: 22px;
+    padding: 0 4px;
+    float: none; }
+
+main menu li:hover, main menu li.active {
+  background-color: #E4F6FE; }
