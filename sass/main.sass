@@ -34,6 +34,8 @@ header
 			img
 				width: 48px
 				vertical-align: middle
+			span
+				font-size: 18px
 
 ////////////MAIN///////////////
 
@@ -117,13 +119,12 @@ hr
 	main
 		article
 			@extend %border-shadow
-		article.user_info
-
+			margin-bottom: 15px
 			header
 				background: none
 				color: #555
 				margin: 0
-				padding: 0
+				padding: 0				
 				h1
 					font-size: 36px
 					font-weight: 300
@@ -162,3 +163,34 @@ hr
 						font-size: 32px
 					span
 						font-size: 16px
+		.post
+			header
+				margin: 30px
+				img
+					margin-right: 30px
+					float: left
+				h2
+					font-size: 22px
+					margin-bottom: 10px
+				span
+					font-size: 14px
+					color: #ccc
+			p
+				margin: 30px
+				color: #777
+				font-size: 16px
+				line-height: 30px
+			.icons
+				margin: 20px 30px
+				color: #FFB34B
+				font-size: 18px
+				font-weight: 300
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				.field
+					margin-right: 30px
+					span
+						margin-left: 10px
