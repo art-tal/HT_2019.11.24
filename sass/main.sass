@@ -3,6 +3,10 @@ $color-header: #0161A3
 $color-brand-hover: #E4F6FE
 $border: 1px solid #eee
 
+%hr
+	border: none
+	border-bottom: $border
+	margin: 0
 %border-shadow
 	border: 1px solid #ccc
 	box-shadow: 0 0 5px 3px #bbb 
@@ -33,9 +37,12 @@ header
 
 ////////////MAIN///////////////
 
+hr
+	@extend %hr
+
 	////////////NAV///////////////
 
-main
+.main
 	.row .col 
 		padding: 0
 		// padding-left: 25px
@@ -65,27 +72,46 @@ main
 			background-color: $color-brand-hover
 	
 	.row .col.s3
-		margin: 0 25px
+		padding: 0 25px
 	aside
 		width: 100%
 		padding: 0
-		@extend %border-shadow
-		img
-			width: 80%
-			margin: 30px auto
-			display: block
-		hr
-			border: none
-			border-bottom: $border
-			margin: 0
-		button
-			margin: 20px
-			width: calc(100% - 40px)
-
-
-		
-
-
-
-
-				
+		box-sizing: border-box
+		.photo
+			@extend %border-shadow
+			margin-bottom: 20px
+			img
+				width: 80%
+				margin: 30px auto
+				display: block
+			
+			button
+				margin: 20px
+				width: calc(100% - 40px)
+		.friends
+			@extend %border-shadow
+			padding: 25px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+			h3
+				width: 100%
+				color: #aaa
+				font-size: 20px
+				margin: 20px 0
+				padding-left: 15px
+			.person
+				width: 30%
+				flex-grow: 1
+				img
+					margin-bottom: 3px
+				h4
+					box-sizing: border-box
+					font-size: 14px
+					line-height: 20px
+					margin: 0
+					padding: 0 5px				
+	
