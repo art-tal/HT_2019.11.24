@@ -11,6 +11,11 @@ $border: 1px solid #eee
 	border: 1px solid #ccc
 	box-shadow: 0 0 5px 3px #bbb 
 	border-radius: 5px
+%header-reset
+	background: none
+	color: #555
+	margin: 0
+	padding: 0	
 
 *
 	margin: 
@@ -31,6 +36,7 @@ header
 			font-size: 30px
 			vertical-align: middle
 		.user
+			text-align: right
 			img
 				width: 48px
 				vertical-align: middle
@@ -42,18 +48,19 @@ header
 hr
 	@extend %hr
 
-	////////////NAV///////////////
-
 .main
 	.row .col 
-		padding: 0
-		// padding-left: 25px
+		padding: 0	
+
+	////////////MENU///////////////
+		
 	.row .col.s2
 		padding-left: 25px
 	menu
 		li
 			a
-				padding: 0px 10px
+				padding: 0px
+				padding-left: 10px
 				i.small
 					font-size: 30px
 					// vertical-align: middle
@@ -93,12 +100,12 @@ hr
 		.friends
 			@extend %border-shadow
 			padding: 25px
-			display: -webkit-flex
-			display: -moz-flex
-			display: -ms-flex
-			display: -o-flex
-			display: flex
-			flex-wrap: wrap
+			// display: -webkit-flex
+			// display: -moz-flex
+			// display: -ms-flex
+			// display: -o-flex
+			// display: flex
+			// flex-wrap: wrap
 			h3
 				width: 100%
 				color: #aaa
@@ -106,8 +113,8 @@ hr
 				margin: 20px 0
 				padding-left: 15px
 			.person
-				width: 30%
-				flex-grow: 1
+				// width: 30%
+				// flex-grow: 1
 				img
 					margin-bottom: 3px
 				h4
@@ -121,10 +128,7 @@ hr
 			@extend %border-shadow
 			margin-bottom: 15px
 			header
-				background: none
-				color: #555
-				margin: 0
-				padding: 0				
+				@extend %header-reset	
 				h1
 					font-size: 36px
 					font-weight: 300
@@ -140,6 +144,8 @@ hr
 					display: -o-flex
 					display: flex
 					margin-bottom: 10px
+					&:last-child
+						margin-bottom: 0
 					span
 						flex: 1
 						color: #ccc
@@ -147,8 +153,6 @@ hr
 					a
 						flex: 2
 						color: $color-brand
-				.field:last-child
-					margin-bottom: 0
 			.social_info
 				display: -webkit-flex
 				display: -moz-flex
@@ -194,3 +198,76 @@ hr
 					margin-right: 30px
 					span
 						margin-left: 10px
+
+////////////MAIN - EVENTS///////////////
+
+main.events
+	box-sizing: border-box
+	padding-left: 15px !important
+	.row
+		margin-left: 0
+		margin-right: 0
+		header
+			@extend %header-reset
+			margin-top: 10px
+			h1
+				font-size: 24px
+				font-weight: 300
+				margin: 0
+		.search
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: flex-end	
+			input
+				flex: 10
+			button
+				margin-left: 5px
+				background-color: $color-header
+
+	.tutorial header
+		background-image: url(../img/html&css.jpg)
+	.diana header
+		background-image: url(../img/happy_birthday.jpg)
+	.halloween header
+		background-image: url(../img/hellowen.jpeg)		
+	article
+		@extend %border-shadow
+		
+		header
+			@extend %header-reset
+			padding-top: 120px
+			background-color:#ccc
+			background-repeat: no-repeat
+			background-size: 100%
+			background-position: 0 30%
+			color: #fff
+		
+			h1
+				margin: 0
+				// margin-top: 120px
+				padding: 30px
+				background-color: rgba(51, 51, 51, 0.5)
+				font-size: 24px
+				font-weight: 900
+		.row
+			margin: 0
+			padding: 20px 30px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			color: #8A8A8A
+			.field
+				margin-right: 15px
+		p
+			color: #555
+			margin: 0px 30px 30px
+		a
+			display: block
+			text-align: right
+			margin: 20px 30px
+			// float: none
