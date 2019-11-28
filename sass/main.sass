@@ -11,6 +11,7 @@ $border: 1px solid #eee
 	border: 1px solid #ccc
 	box-shadow: 0 0 5px 3px #bbb 
 	border-radius: 5px
+	box-sizing: border-box
 %header-reset
 	background: none
 	color: #555
@@ -145,6 +146,7 @@ hr
 					margin: 0
 					padding: 0 5px				
 	main
+		padding-left: 15px
 		article
 			@extend %border-shadow
 			margin-bottom: 15px
@@ -222,7 +224,8 @@ hr
 
 ////////////MAIN - EVENTS///////////////
 
-main.events
+main.events,
+main.friends_page
 	box-sizing: border-box
 	padding-left: 15px !important
 	.row
@@ -248,6 +251,8 @@ main.events
 				margin-left: 5px
 				background-color: $color-header
 
+
+main.events
 	.tutorial header
 		background-image: url(../img/html&css.jpg)
 	.diana header
@@ -381,3 +386,42 @@ main.messages
 			display: flex
 			button
 				background-color: $color-header
+
+////////////MAIN - FRIENDS///////////////
+
+main.friends_page
+	h1
+		font-size: 24px
+		font-weight: 300
+
+	.friends_info
+		padding: 20px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		img
+			display: block
+			width: 64px
+			margin-right: 80px
+			flex: 1
+		.friends_card
+			flex: 4
+			h4
+				font-size: 18px
+				font-weight: bold
+				margin: 0
+				margin-bottom: 5px
+			div
+				color: #999
+				font-size: 14px
+				i
+					font-size: 18px
+					margin-right: 5px
+		.links
+			flex: 2
+			a
+				display: block
+
