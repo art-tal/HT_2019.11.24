@@ -3,7 +3,7 @@ hr, .main main article header h1 {
   border-bottom: 1px solid #eee;
   margin: 0; }
 
-.main aside .photo, .main aside .friends, .main main article, main.events article, main.messages {
+.main aside .photo, .main aside .friends, .main main article, main.events article, main.messages, main.news article .wrap {
   border: 1px solid #ccc;
   -webkit-box-shadow: 0 0 5px 3px #bbb;
   box-shadow: 0 0 5px 3px #bbb;
@@ -12,6 +12,7 @@ hr, .main main article header h1 {
   box-sizing: border-box; }
 
 .main main article header, main.events .row header,
+main.news .row header,
 main.friends_page .row header, main.events article header {
   background: none;
   color: #555;
@@ -207,23 +208,28 @@ main form[name="login"] {
         margin-left: 10px; }
 
 main.events,
+main.news,
 main.friends_page {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 15px !important; }
   main.events .row,
+  main.news .row,
   main.friends_page .row {
     margin-left: 0;
     margin-right: 0; }
     main.events .row header,
+    main.news .row header,
     main.friends_page .row header {
       margin-top: 10px; }
       main.events .row header h1,
+      main.news .row header h1,
       main.friends_page .row header h1 {
         font-size: 24px;
         font-weight: 300;
         margin: 0; }
     main.events .row .search,
+    main.news .row .search,
     main.friends_page .row .search {
       display: -webkit-flex;
       display: -moz-flex;
@@ -236,11 +242,13 @@ main.friends_page {
       -ms-flex-pack: end;
       justify-content: flex-end; }
       main.events .row .search input,
+      main.news .row .search input,
       main.friends_page .row .search input {
         -webkit-box-flex: 10;
         -ms-flex: 10;
         flex: 10; }
       main.events .row .search button,
+      main.news .row .search button,
       main.friends_page .row .search button {
         margin-left: 5px;
         background-color: #0161A3; }
@@ -419,3 +427,54 @@ main.friends_page .friends_info {
     flex: 2; }
     main.friends_page .friends_info .links a {
       display: block; }
+
+main.news article {
+  padding: 20px; }
+  main.news article header {
+    margin-bottom: 25px; }
+    main.news article header img {
+      margin-right: 30px; }
+    main.news article header h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 5px 0; }
+    main.news article header span {
+      color: #999;
+      font-size: 14px; }
+  main.news article p {
+    color: #555; }
+  main.news article .gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; }
+    main.news article .gallery div {
+      height: 300px;
+      overflow: hidden; }
+      main.news article .gallery div img {
+        height: 100%; }
+  main.news article .school {
+    background-image: url(../img/school.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 100px 0 0px; }
+    main.news article .school h2 {
+      display: inline-block;
+      font-size: 22px;
+      padding: 15px;
+      background-color: rgba(51, 51, 51, 0.5);
+      color: #fff; }
+  main.news article .wrap {
+    border-top: none;
+    -webkit-box-shadow: 0 3px 5px 3px #bbb;
+    box-shadow: 0 3px 5px 3px #bbb;
+    padding: 20px 0;
+    border-radius: 0 0 5px 5px; }
+    main.news article .wrap p {
+      margin: 0 20px 30px; }
+    main.news article .wrap a {
+      display: block;
+      margin: 20px 20px 0 20px;
+      color: #FFB545;
+      text-transform: uppercase; }
