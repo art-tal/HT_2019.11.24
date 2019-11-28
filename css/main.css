@@ -38,6 +38,26 @@ header {
       header .row .user span {
         font-size: 18px; }
 
+main form[name="login"] {
+  width: 500px;
+  margin: 0 auto; }
+  main form[name="login"] h1 {
+    font-size: 30px; }
+  main form[name="login"] input[type="text"]:not(.browser-default),
+  main form[name="login"] input[type="password"]:not(.browser-default) {
+    margin-bottom: 40px; }
+  main form[name="login"] div {
+    margin-bottom: 40px; }
+    main form[name="login"] div input[type="checkbox"] {
+      position: relative;
+      opacity: 1;
+      pointer-events: visible;
+      margin-right: 10px; }
+  main form[name="login"] .btn {
+    width: 100%;
+    background-color: #0161A3;
+    margin-bottom: 25px; }
+
 .main .row .col {
   padding: 0; }
 

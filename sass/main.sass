@@ -45,6 +45,27 @@ header
 
 ////////////MAIN///////////////
 
+main
+	form[name="login"]
+		width: 500px
+		margin: 0 auto
+		h1
+			font-size: 30px
+		input[type="text"]:not(.browser-default), 
+		input[type="password"]:not(.browser-default)
+			margin-bottom: 40px
+		div
+			margin-bottom: 40px
+			input[type="checkbox"]
+				position: relative
+				opacity: 1
+				pointer-events: visible
+				margin-right: 10px
+		.btn
+			width: 100%
+			background-color: $color-header
+			margin-bottom: 25px
+
 hr
 	@extend %hr
 
