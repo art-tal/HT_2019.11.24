@@ -3,7 +3,7 @@ hr, .main main article header h1 {
   border-bottom: 1px solid #eee;
   margin: 0; }
 
-.main aside .photo, .main aside .friends, .main main article, main.events article {
+.main aside .photo, .main aside .friends, .main main article, main.events article, main.messages {
   border: 1px solid #ccc;
   -webkit-box-shadow: 0 0 5px 3px #bbb;
   box-shadow: 0 0 5px 3px #bbb;
@@ -254,3 +254,87 @@ main.events {
     display: block;
     text-align: right;
     margin: 20px 30px; }
+
+main.messages {
+  position: relative;
+  padding-right: 15px; }
+  main.messages .tabs {
+    overflow: auto;
+    height: auto;
+    white-space: normal; }
+    main.messages .tabs .tab {
+      display: block;
+      text-align: left;
+      height: auto;
+      text-transform: none;
+      line-height: 1.2;
+      padding: 0px;
+      padding-right: 15px; }
+      main.messages .tabs .tab a {
+        color: #333;
+        padding: 10px; }
+        main.messages .tabs .tab a.active, main.messages .tabs .tab a:hover {
+          background-color: #0382C3;
+          color: #fff; }
+        main.messages .tabs .tab a:hover p.new {
+          color: #fff; }
+        main.messages .tabs .tab a img {
+          float: left;
+          margin-bottom: 15px;
+          margin-right: 15px; }
+        main.messages .tabs .tab a h4 {
+          font-size: 16px;
+          font-weight: bold;
+          margin: 0; }
+        main.messages .tabs .tab a p.new {
+          color: #0382C3;
+          font-weight: bold; }
+        main.messages .tabs .tab a .badge {
+          background-color: #0382C3;
+          color: #fff;
+          border-radius: 3px;
+          min-width: 1rem; }
+  main.messages .dialog {
+    padding-left: 20px;
+    margin-bottom: 90px; }
+    main.messages .dialog .chat {
+      display: none; }
+    main.messages .dialog .chat:first-child {
+      display: block; }
+    main.messages .dialog .friend img {
+      float: left;
+      margin-right: 15px; }
+    main.messages .dialog .luella img {
+      float: right;
+      margin-left: 15px; }
+    main.messages .dialog .say {
+      margin-top: 25px;
+      margin-right: 15px;
+      min-height: 64px; }
+      main.messages .dialog .say h4 {
+        font-size: 16px;
+        font-weight: bold;
+        display: inline-block;
+        margin: 0;
+        margin-right: 5px; }
+      main.messages .dialog .say span {
+        color: #777;
+        font-size: 14px; }
+      main.messages .dialog .say p {
+        margin: 0; }
+    main.messages .dialog .i_say {
+      position: absolute;
+      bottom: 20px;
+      left: 345px;
+      right: 0;
+      margin-top: 60px;
+      margin-right: 15px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      main.messages .dialog .i_say button {
+        background-color: #0161A3; }

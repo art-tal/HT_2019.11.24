@@ -271,3 +271,92 @@ main.events
 			text-align: right
 			margin: 20px 30px
 			// float: none
+
+////////////MAIN - MASSENGES///////////////
+
+main.messages	
+	@extend %border-shadow
+	position: relative
+	padding-right: 15px
+	.tabs
+		overflow: auto
+		height: auto
+		white-space: normal
+		.tab
+			display: block
+			text-align: left
+			height: auto
+			text-transform: none
+			line-height: 1.2
+			padding: 0px
+			padding-right: 15px
+			a
+				color:#333
+				padding: 10px
+				&.active, &:hover
+					background-color: $color-brand
+					color: #fff
+				&:hover p.new
+					color: #fff
+				img
+					float: left
+					margin-bottom: 15px
+					margin-right: 15px
+				h4
+					font-size: 16px
+					font-weight: bold
+					margin: 0
+				p.new
+					color: $color-brand
+					font-weight: bold
+				.badge
+					background-color: $color-brand
+					color:#fff
+					border-radius: 3px
+					min-width: 1rem
+			// a.active .chat
+			// 	display: block
+	.dialog
+		padding-left: 20px
+		margin-bottom: 90px
+		.chat
+			display: none
+		.chat:first-child
+			display: block
+		.friend
+			img
+				float: left
+				margin-right: 15px
+		.luella
+			img
+				float: right
+				margin-left: 15px
+		.say
+			margin-top: 25px
+			margin-right: 15px
+			min-height: 64px
+			h4
+				font-size: 16px
+				font-weight: bold
+				display: inline-block
+				margin: 0
+				margin-right: 5px
+			span
+				color:#777
+				font-size: 14px
+			p
+				margin: 0
+		.i_say
+			position: absolute
+			bottom: 20px
+			left: 345px
+			right: 0
+			margin-top: 60px
+			margin-right: 15px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			button
+				background-color: $color-header

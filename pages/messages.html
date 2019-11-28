@@ -4,6 +4,7 @@
 	<title>DZ#1</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="../libs/materialize/css/materialize.min.css">
 	<link rel="stylesheet" href="../css/fonts.css">
@@ -57,19 +58,337 @@
 				</ul>
 			</menu>
 
-			<aside class="col s3 row messages">
+			<!-- <aside class="col s3 row messages">
 				
-			</aside>	
+				
+			</aside>	 -->
 
-			<main class="col m6 l6 xl7 messages">
+			<main class="col m9 l9 xl10  messages row">
 				
+
+				<ul class="tabs col s4">
+					<li class="tab">
+						<a class="active" id="#pranav">
+							<img src="../img/avatar_1.png" alt="avatar_1">
+							<h4>Pranav Talley</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur.</p>
+						</a>
+					</li>
+					<li class="tab">
+						<a id="#serena">
+							<img src="../img/avatar_2.png" alt="avatar_2">
+							<span class="badge">3</span>
+							<h4>Serena Perkins</h4>
+							<p class="new">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						</a>
+					</li>
+					<li class="tab">
+						<a id="#lyndsey">
+							<img src="../img/avatar_3.png" alt="avatar_3">
+							<h4>Lindsey Thomson</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						</a>
+					</li>
+					<li class="tab">
+						<a id="#nell">
+							<img src="../img/avatar_4.png" alt="avatar_4">
+							<span class="badge">1</span>
+							<h4>Nell Choi</h4>
+							<p class="new">Lorem ipsum dolor sit amet, consectetur.</p>
+						</a>
+					</li>
+					<li class="tab">
+						<a id="#nate">
+							<img src="../img/avatar_1.png" alt="avatar_1">
+							<h4>Nate Oakley</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</a>
+					</li>
+					<li class="tab">
+						<a id="#amy">
+							<img src="../img/avatar_2.png" alt="avatar_2">
+							<h4>Amy-Louise Mcclure</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						</a>
+					</li>
+					<li class="tab">
+						<a id="#raife">
+							<img src="../img/avatar_3.png" alt="avatar_3">
+							<h4>Raife John</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur.</p>
+						</a>
+					</li>
+					
+				</ul>
+
+				<div class="col s8 dialog align-item-strech">
+					<div id="dialog_pranav" class="col s12 chat">
+						<div class="friend say">
+							<img src="../img/avatar_1.png" alt="avatar_1">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="friend say">
+							<img src="../img/avatar_1.png" alt="avatar_1">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="i_say">
+							<input type="text" placeholder="Message">
+							<button class="btn-floating btn waves-effect waves-light">
+								<i class="small material-icons">send</i>
+							</button>
+						</div>
+					</div>
+
+					<div id="dialog_serena" class="col s12 chat">
+						<div class="friend say">
+							<img src="../img/avatar_2.png" alt="avatar_2">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="friend say">
+							<img src="../img/avatar_2.png" alt="avatar_2">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="i_say">
+							<input type="text" placeholder="Message">
+							<button class="btn-floating btn waves-effect waves-light">
+								<i class="small material-icons">send</i>
+							</button>
+						</div>
+					</div>
+
+					<div id="dialog_lyndsey" class="col s12 chat">
+						<div class="friend say">
+							<img src="../img/avatar_3.png" alt="avatar_3">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="friend say">
+							<img src="../img/avatar_3.png" alt="avatar_3">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="i_say">
+							<input type="text" placeholder="Message">
+							<button class="btn-floating btn waves-effect waves-light">
+								<i class="small material-icons">send</i>
+							</button>
+						</div>
+					</div>
+
+					<div id="dialog_nell" class="col s12 chat">
+						<div class="friend say">
+							<img src="../img/avatar_4.png" alt="avatar_4">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="friend say">
+							<img src="../img/avatar_4.png" alt="avatar_4">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="i_say">
+							<input type="text" placeholder="Message">
+							<button class="btn-floating btn waves-effect waves-light">
+								<i class="small material-icons">send</i>
+							</button>
+						</div>
+					</div>
+
+					<div id="dialog_nate" class="col s12 chat">
+						<div class="friend say">
+							<img src="../img/avatar_1.png" alt="avatar_1">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="friend say">
+							<img src="../img/avatar_1.png" alt="avatar_1">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="i_say">
+							<input type="text" placeholder="Message">
+							<button class="btn-floating btn waves-effect waves-light">
+								<i class="small material-icons">send</i>
+							</button>
+						</div>
+					</div>
+
+					<div id="dialog_amy" class="col s12 chat">
+						<div class="friend say">
+							<img src="../img/avatar_2.png" alt="avatar_2">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="friend say">
+							<img src="../img/avatar_2.png" alt="avatar_2">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="i_say">
+							<input type="text" placeholder="Message">
+							<button class="btn-floating btn waves-effect waves-light">
+								<i class="small material-icons">send</i>
+							</button>
+						</div>
+					</div>
+
+					<div id="dialog_raife" class="col s12 chat">
+						<div class="friend say">
+							<img src="../img/avatar_3.png" alt="avatar_3">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="friend say">
+							<img src="../img/avatar_3.png" alt="avatar_3">
+							<h4>Pranav Talley</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, magni.</p>
+						</div>
+
+						<div class="luella say">
+							<img src="../img/av_64.png" alt="av_64">
+							<h4>Luella Hubbart</h4>
+							<span>12:45:34</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint, atque vel debitis!.</p>
+						</div>
+
+						<div class="i_say">
+							<input type="text" placeholder="Message">
+							<button class="btn-floating btn waves-effect waves-light">
+								<i class="small material-icons">send</i>
+							</button>
+						</div>
+					</div>
+
+				</div>
 
 			</main>
 		</div>
 	</div>
 
-
-	<script type="text/javascript" src="libs/materialize/js/materialize.min.js"></script>
-	<script src="js/common.js"></script>
+	<script type="text/javascript" src="../libs/jquery/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../libs/materialize/js/materialize.min.js"></script>
+	<script src="../js/common.js"></script>
 </body>
 </html>

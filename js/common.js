@@ -1,47 +1,148 @@
-$(function() {
+    $("#pranav").click(function () {
 
-	//SVG Fallback
-	if(!Modernizr.svg) {
-		$("img[src*='svg']").attr("src", function() {
-			return $(this).attr("src").replace(".svg", ".png");
-		});
-	};
+			$("#dialog_pranav").show();
+			$("#dialog_serena").hide();
+			$("#dialog_lyndsey").hide();
+			$("#dialog_nell").hide();
+			$("#dialog_nate").hide();
+			$("#dialog_amy").hide();
+			$("#dialog_raife").hide();
 
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
+			$("#pranav").addClass("activ");
+			$("#serena").removeClass("activ");
+            $("#lyndsey").removeClass("activ");
+            $("#nell").removeClass("activ");
+            $("#nate").removeClass("activ");
+            $("#amy").removeClass("activ");
+            $("#raife").removeClass("activ");
+		})
 
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
+		
+    $("#serena").click(function () {
 
-	};
+			$("#dialog_pranav").hide();
+			$("#dialog_serena").show();
+			$("#dialog_lyndsey").hide();
+			$("#dialog_nell").hide();
+			$("#dialog_nate").hide();
+			$("#dialog_amy").hide();
+			$("#dialog_raife").hide();
 
-	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
-	
-});
+			$("#pranav").removeClass("activ");
+			$("#serena").addClass("activ");
+            $("#lyndsey").removeClass("activ");
+            $("#nell").removeClass("activ");
+            $("#nate").removeClass("activ");
+            $("#amy").removeClass("activ");
+            $("#raife").removeClass("activ");
+		})
 
-$(window).load(function() {
 
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
+    $("#lyndsey").click(function () {
 
-});
+			$("#dialog_pranav").hide();
+			$("#dialog_serena").hide();
+			$("#dialog_lyndsey").show();
+			$("#dialog_nell").hide();
+			$("#dialog_nate").hide();
+			$("#dialog_amy").hide();
+			$("#dialog_raife").hide();
+
+			$("#pranav").removeClass("activ");
+			$("#serena").removeClass("activ");
+            $("#lyndsey").addClass("activ");
+            $("#nell").removeClass("activ");
+            $("#nate").removeClass("activ");
+            $("#amy").removeClass("activ");
+            $("#raife").removeClass("activ");
+		})
+
+
+    $("#nell").click(function () {
+
+			$("#dialog_pranav").hide();
+			$("#dialog_serena").hide();
+			$("#dialog_lyndsey").hide();
+			$("#dialog_nell").show();
+			$("#dialog_nate").hide();
+			$("#dialog_amy").hide();
+			$("#dialog_raife").hide();
+
+			$("#pranav").removeClass("activ");
+			$("#serena").removeClass("activ");
+            $("#lyndsey").removeClass("activ");
+            $("#nell").addClass("activ");
+            $("#nate").removeClass("activ");
+            $("#amy").removeClass("activ");
+            $("#raife").removeClass("activ");
+		})
+
+
+    $("#nate").click(function () {
+
+			$("#dialog_pranav").hide();
+			$("#dialog_serena").hide();
+			$("#dialog_lyndsey").hide();
+			$("#dialog_nell").hide();
+			$("#dialog_nate").show();
+			$("#dialog_amy").hide();
+			$("#dialog_raife").hide();
+
+			$("#pranav").removeClass("activ");
+			$("#serena").removeClass("activ");
+            $("#lyndsey").removeClass("activ");
+            $("#nell").removeClass("activ");
+            $("#nate").addClass("activ");
+            $("#amy").removeClass("activ");
+            $("#raife").removeClass("activ");
+		})
+
+
+    $("#amy").click(function () {
+
+			$("#dialog_pranav").hide();
+			$("#dialog_serena").hide();
+			$("#dialog_lyndsey").hide();
+			$("#dialog_nell").hide();
+			$("#dialog_nate").hide();
+			$("#dialog_amy").show();
+			$("#dialog_raife").hide();
+
+			$("#pranav").removeClass("activ");
+			$("#serena").removeClass("activ");
+            $("#lyndsey").removeClass("activ");
+            $("#nell").removeClass("activ");
+            $("#nate").removeClass("activ");
+            $("#amy").addClass("activ");
+            $("#raife").removeClass("activ");
+		})
+
+
+    $("#raife").click(function () {
+
+			$("#dialog_pranav").hide();
+			$("#dialog_serena").hide();
+			$("#dialog_lyndsey").hide();
+			$("#dialog_nell").hide();
+			$("#dialog_nate").hide();
+			$("#dialog_amy").hide();
+			$("#dialog_raife").show();
+
+			$("#pranav").removeClass("activ");
+			$("#serena").removeClass("activ");
+            $("#lyndsey").removeClass("activ");
+            $("#nell").removeClass("activ");
+            $("#nate").removeClass("activ");
+            $("#amy").removeClass("activ");
+            $("#raife").addClass("activ");
+		})
+
+
+
+
+
+  
+
+
+
+ 
